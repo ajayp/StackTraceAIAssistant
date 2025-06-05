@@ -84,3 +84,8 @@ While sentence embeddings capture the *semantic meaning* of code (what it does),
 *   Use a larger, domain-specific embedding model.
 *   Add functionality to link retrieved code back to specific lines in the original files.
 *   Incorporate Large Language Models (LLMs) to summarize the retrieved context or suggest potential fixes.
+
+### Example
+
+<img width="1604" alt="image" src="https://github.com/user-attachments/assets/1f655977-cb7c-4e11-bb68-55301513bea1" />
+
