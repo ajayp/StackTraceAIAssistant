@@ -1,4 +1,4 @@
-## StackTraceAIAssistant PoC
+## StackTraceAIAssistant Proof of Concept (PoC)
 
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/streamlit-app-brightgreen)](https://streamlit.io/)
@@ -15,11 +15,9 @@
 - [Future Improvements (PoC Ideas)](#future-improvements-poc-ideas)
 - [Example](#example)
 
-...
-
 ### Introduction
 
-This project is a Proof of Concept (PoC) demonstrating how to retrieve relevant code snippets and similar historical stack traces based on a new error event. It utilizes sentence embeddings for semantic similarity and Abstract Syntax Tree (AST) analysis to identify structurally relevant code.
+This project is a PoC demonstrating how to retrieve relevant code snippets and similar historical stack traces based on a new error event. It utilizes sentence embeddings for semantic similarity and Abstract Syntax Tree (AST) analysis to identify structurally relevant code.
 
 The PoC is implemented as an interactive Streamlit application, making it easy to visualize the retrieval process.
 
@@ -75,7 +73,7 @@ While sentence embeddings capture the *semantic meaning* of code (what it does),
 
 ### Project Structure
 
-*   `error_context_retrieval.py`: Contains all the code for the Streamlit application, including data simulation, AST parsing, embedding, and retrieval logic.
+*   `app.py`: Contains all the code for the Streamlit application, including data simulation, AST parsing, embedding, and retrieval logic.
 
 ### Future Improvements (PoC Ideas)
 
