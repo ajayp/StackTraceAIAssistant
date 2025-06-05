@@ -1,8 +1,10 @@
 import streamlit as st
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from sentence_transformers import SentenceTransformer, util
+
 import ast
 import torch
+
 
 # --- Configuration ---
 # Using pre-trained model for generating embeddings
@@ -169,7 +171,7 @@ def retrieve_context_for_streamlit(
 
     # 2. For each frame in the error stack trace, find relevant context
     for i, frame_embedding in enumerate(error_frame_embeddings):
-        st.write(f"Searching context for Frame {i+1}: {error_stack_trace_content[i].splitlines()[0]}...")
+        # st.write(f"Searching context for Frame {i+1}: {error_stack_trace_content[i].splitlines()[0]}...")
 
         # Search for similar items in the vector DB
         cosine_scores = util.cos_sim(frame_embedding.unsqueeze(0), db_embeddings)[0]
@@ -186,7 +188,7 @@ def retrieve_context_for_streamlit(
             st.write("No relevant context found for this frame above the threshold.")
             continue
 
-        st.write("Found relevant context for this frame:")
+        # st.write("Found relevant context for this frame:")
         for idx in top_results_indices:
             item = current_vector_db[idx]
             score = cosine_scores[idx].item()

@@ -13,6 +13,8 @@
 - [Using the Application](#using-the-application)
 - [Project Structure](#project-structure)
 - [Future Improvements (PoC Ideas)](#future-improvements-poc-ideas)
+- [Example](#example)
+
 ...
 
 ### Introduction
