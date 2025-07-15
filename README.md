@@ -1,4 +1,4 @@
-## StackTraceAIAssistant Proof of Concept (PoC)
+## Proof of Concept (PoC)
 
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/streamlit-app-brightgreen)](https://streamlit.io/)
